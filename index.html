@@ -3,90 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d'
+                        }
+                    }
+                }
+            }
+        </script>
    
     <title>Document</title>
 </head>
 <body class="p-0 font-sans">
-    <div class="bg-gray-500 flex flex-col ">
-        <div class="">
-            <h1>Alfredo Lopez Sandoval</h1>
-            <h2>Estudiante de Ingenieria de sistemas</h2>
+    <div class="flex flex-col items-center">
+        <div class=" w-[80%] p-10 gap-10 flex items-center justify-between shadow-b">
+            <div class="text-center">
+                <h1 class="text-3xl font-semibold">Alfredo Lopez Sandoval</h1>
+                <h2 class="text-base">Estudiante de Ingenieria de sistemas</h2>
+            </div>
+            <nav class="flex items-center justify-center">
+                <ul class="flex gap-10 justify-center items-center">
+                    <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Home</li>
+                    <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Projects</li>
+                    <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Skills</li>
+                    <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Contact</li>
+                </ul>
+            </nav>
         </div>
-        <nav class="flex bg-gray-400 items-center 
-        justify-center gap-4 ">
-            <ul class="flex gap-4">
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </div>
-    <div class="about">
-        <div class="descripcion">
-            <p>Soy un futuro Ingeniero de Sistemas apasionado por la programación y
-                el desarrollo de software. Con tan solo 20 años, combino mi formación académica
-                en la Universidad de Piura con una curiosidad autodidacta insaciable para construir
-                proyectos que no solo resuelven problemas, sino que también me permiten crecer día
-                a día en el fascinante mundo de la tecnología.</p>
+        <div class="w-[80%] my-10">
+            <div class="p-0 m-0 flex items-center justify-center ">
+                <div class="p-0 m-0 w-[50%] text-center text-xl">
+                    <p>Soy un futuro Ingeniero de Sistemas apasionado por la programación y
+                        el desarrollo de software. Combino mi formación académica
+                        en la Universidad de Piura con una curiosidad autodidacta insaciable para construir
+                        proyectos que no solo resuelven problemas, sino que también me permiten crecer día
+                        a día.</p>
         
-            <p>Actualmente en mi 6to ciclo, busco mi primera oportunidad profesional para aplicar mis 
-                conocimientos, aprender de
-                los mejores y contribuir con mi proactividad y ganas de superarme.</p>
+                    <p>Actualmente en mi 6to ciclo, busco mi primera oportunidad profesional para aplicar mis
+                        conocimientos, aprender y contribuir con mi proactividad y ganas de superarme.</p>
+                </div>
+            </div>
+            <div class="text-xl my-10 gap-7 flex flex-col justify-center items-left 
+            px-10 py-5 w-[50%] "> 
+                <h2 class="">Formación Académica</h2>
+                <p class="">Donde construyo mis fundamentos teóricos
+                    y prácticos para el mundo tecnológico.</p>
+        
+            </div>
+            <table class="felx flex-col bg-gray-200 w-[100%] px-10 py-5">
+                    <tr>
+                        <td class="">
+                            <h3>Univercidad tecnologica del Perú (UTP)</h3>
+                            <p>Ingeniería de Sistemas e Informática</p>
+        
+                        </td>
+                        <td class="">
+                            <p class="">2023 - Actualidad</p>
+                            <p class="">6to Ciclo (Cursando)</p>
+                        </td>
+                    </tr>
+                </table>
+            <div class="">
+                <h2>Projectos</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <img>
+                        </td>
+                        <td>
+                            <h3>nombre projecto</h3>
+                            <p>descirpcion</p>
+                        </td>
+                    </tr>
+                </table>
+        
+            </div>
+        
+            <div class="contact">
+                <div class="info-personal text-center">
+                    <img class="mx-auto">
+                    <h1 class="text-xl font-medium">Alfredo Lopez Sandoval</h1>
+                    <h2 class="text-sm">Estudiante Ingenieria de sistemas</h2>
+                </div>
+                <div class="info-contacto">
+        
+        
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="education">
-        <h2>Formación <span class="highlight">Académica</span></h2>
-        <p class="educacion-subtitulo">Donde construyo mis fundamentos teóricos 
-            y prácticos para el mundo tecnológico.</p>
-        <table class="tabla-educacion">
-            <tr >
-                <td class="institucion">
-                    <h3>Univercidad tecnologica del Perú (UTP)</h3>
-                    <p>Ingeniería de Sistemas e Informática</p>
-
-                </td>
-                <td class="informacion-estado">
-                    <p class="periodo">2023 - Actualidad</p>
-                    <p class="estado">6to Ciclo (Cursando)</p>
-                </td>
-            </tr>
-        </table>
-
-    </div>
-    <div class="projects">
-        <h2>Projectos</h2>
-        <table>
-            <tr>
-                <td>
-                    <img>
-                </td>
-                <td>
-                    <h3>nombre projecto</h3>
-                    <p>descirpcion</p>
-                </td>
-            </tr>
-        </table>
-
-    </div>
-
-    <div class="contact">
-        <div class="info-personal">
-            <img>
-            <h1>Alfredo Lopez Sandoval</h1>
-            <h2>Estudiante Ingenieria de sistemas</h2>
-        </div>
-        <div class="info-contacto">
-            <
-
-        </div>
-
     </div>
 </body>
 </html>
