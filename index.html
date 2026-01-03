@@ -3,38 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            clifford: '#da373d'
-                        }
-                    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+             theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                     colors: {
+                           clifford: '#da373d'
+                     }
+                 }
                 }
             }
-        </script>
+    </script>
    
-    <title>Document</title>
+    <title>Portafolio - Alfredo Lopez Sandoval</title>
 </head>
 <body style="background-image:url('img/fondo-4.jpg')" 
-class="p-0 font-sans bg-cover bg-center">
-    <div class="flex flex-col items-center">
-        <div class=" bg-white rounded-xl border-black border-2 
-        w-[80%] px-10 py-5 mt-3 gap-10 flex items-center justify-between shadow-b">
-            <div class="text-center">
-                <h1 class="text-4xl font-semibold">Alfredo Lopez Sandoval</h1>
-                <h2 class="text-base">Estudiante de Ingenieria de sistemas</h2>
+class="font-sans bg-cover bg-center bg-fixed min-h-screen">
+    <div class="flex flex-col items-center bg-black/60 
+    min-h-screen backdrop-blur-sm">
+        <div class=" sticky top-2 z-50 bg-white/60 backdrop-blur-md
+        border-b border-black/10 rounded-xl px-10 py-5 mt-3 ">
+            <div class="flex items-center justify-center mx-w-80% mx-auto">
+                
+                <nav class="flex items-center justify-center">
+                    <ul class="flex gap-10 justify-center items-center">
+                        <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Home</li>
+                        <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Projects</li>
+                        <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Skills</li>
+                        <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Contact</li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="flex items-center justify-center">
-                <ul class="flex gap-10 justify-center items-center">
-                    <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Home</li>
-                    <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Projects</li>
-                    <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Skills</li>
-                    <li class="hover:bg-gray-200 px-4 py-2 rounded-full">Contact</li>
-                </ul>
-            </nav>
+        </div>
+        <div class="text-center mt-10">
+            <h1 class="text-5xl font-extrablod">Alfredo Lopez Sandoval</h1>
+            <h2 class="text-xs">Estudiante de Ingenieria de sistemas</h2>
         </div>
         <div class="w-[50%] mt-11 py-8 px-20 flex items-center justify-center
                      shadow-lg shadow-gray-700 rounded-md bg-white">
